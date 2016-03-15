@@ -232,7 +232,7 @@ Angular will then change the values over to their actual scope values before pas
 
 Notice how we've updated our template to use `{{ handle }}`? This is because our `$scope` has the property `handle` on it now, because of the object.
 
-However, you might not like this - you might have wanted to stick with `{{ twitter }}` but *also* have it configured by using the attribute `handle`. To do this, we can change the object property to `twitter` and we put `handle` after the `@` or `=``, like follows:
+However, you might not like this - you might have wanted to stick with `{{ twitter }}` but *also* have it configured by using the attribute `handle`. To do this, we can change the object property to `twitter` and we put `handle` after the `@` or `=`, like follows:
 
 ```js
 function TwitterCard() {
