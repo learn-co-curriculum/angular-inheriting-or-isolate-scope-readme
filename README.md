@@ -2,7 +2,7 @@
 
 ## Overview
 
-So far, our directives we've made aren't really that useful. We're not doing anything special - let's change that!
+So far, our directives we've made aren't really that useful. We're not doing anything special, such as displaying dynamic data - let's change that!
 
 ## Objectives
 
@@ -19,7 +19,7 @@ Now, one cool things about our directives is that they can display dynamic data.
 
 We can do this exactly like we've done in our views so far - using `{{}}`.
 
-Note: now that we've started using more HTML in our directives, instead of just passing a string, we pass in a multi-line array, joined by an empty string. This means we can have a multi-lined template without having to worry about string concatenation.
+Note: now that we've started using more HTML in our directives, instead of just passing a string, we pass in a multi-line array, joined by an empty string. This means we can have a multi-lined template without having to worry about string concatenation. This is great for small templates, but as our templates get larger we should move out into a separate file.
 
 Lets create the Twitter card.
 
@@ -226,7 +226,7 @@ What this means is that if we have a controller with two properties on it, such 
 <twitter-card handle="twitterHandle2"></twitter-card>
 ```
 
-Angular will then change the values over to their actual scope values before passing the value through to our directive. This also means that if we were to update either of them, Angular will automatically update our directive to match it too. Awesome!
+Angular will then change the values over to their actual scope values before passing the value through to our directive. This also means that if we were to update either of them, Angular will automatically update our directive to match it too. Awesome! There's not really any reason why you wouldn't want the directive to update with the latest values, but if you ever do, the option is baked in.
 
 #### Changing attribute names
 
@@ -260,4 +260,4 @@ This means we can do this still:
 <twitter-card handle="billgates"></twitter-card>
 ```
 
-Whilst populating `$scope.twitter` with the value.
+Whilst populating `$scope.twitter` with the value. There's no advantage to this or real reason as to why you'd need to use it, but the flexability is there if you need it.
