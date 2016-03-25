@@ -2,7 +2,7 @@
 
 ## Overview
 
-So far, our directives we've made aren't really that useful. We're not doing anything special, such as displaying dynamic data - let's change that!
+So far, the directives we've made aren't really that useful. We're not doing anything special, such as displaying dynamic data - let's change that!
 
 ## Objectives
 
@@ -15,7 +15,7 @@ So far, our directives we've made aren't really that useful. We're not doing any
 
 ## Scope inheritance
 
-Now, one cool things about our directives is that they can display dynamic data. For instance, we might want to have a Twitter card to display a users Twitter handle, along with a link to follow said user.
+Now, one cool thing about our directives is that they can display dynamic data. For instance, we might want to have a Twitter card to display a users Twitter handle, along with a link to follow said user.
 
 We can do this exactly like we've done in our views so far - using `{{}}`.
 
@@ -261,3 +261,5 @@ This means we can do this still:
 ```
 
 Whilst populating `$scope.twitter` with the value. There's no advantage to this or real reason as to why you'd need to use it, but the flexability is there if you need it.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-inheriting-or-isolate-scope-readme'>Inheriting Or Isolating Scope </a> on Learn.co and start learning to code for free.</p>
