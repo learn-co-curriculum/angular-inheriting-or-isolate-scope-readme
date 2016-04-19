@@ -260,6 +260,6 @@ This means we can do this still:
 <twitter-card handle="billgates"></twitter-card>
 ```
 
-Whilst populating `$scope.twitter` with the value. There's no advantage to this or real reason as to why you'd need to use it, but the flexability is there if you need it.
+Whilst populating `$scope.twitter` with the value. There's no advantage to this or real reason as to why you'd need to use it, but the flexibility is there if you need it.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/angular-inheriting-or-isolate-scope-readme'>Inheriting Or Isolating Scope </a> on Learn.co and start learning to code for free.</p>
