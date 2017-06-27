@@ -42,7 +42,7 @@ angular
 
 Now that's cool, but how do we *actually* get our data? Well, we can actually inherit it from the scope above.
 
-Let's assume we've got a controller, that has a property on it's scope named `twitter`. We would display this in our view as follows:
+Let's assume we've got a controller that has a property on its scope named `twitter`. We would display this in our view as follows:
 
 ```html
 <div ng-controller="SomeController">
@@ -93,7 +93,7 @@ One ridiculous way of doing this is to create a new controller for every Twitter
 
 ## Isolate Scope
 
-Aha! There is! It's called isolate scope. What this does is creates a new scope for our directive - it can either be a completely brand new one or copied from our parent.
+Aha! There is! It's called isolate scope. This creates a new scope for our directive - it can either be a completely brand new one or copied from our parent.
 
 In our directive's object, we can attach a property named `scope` to it. This can have a few different values:
 
@@ -146,13 +146,13 @@ The Twitter handle inside `<twitter-card>` hasn't changed. This is because we've
 
 Now, this is where things get funky. We can pass through an object to our scope object - but why?
 
-When we use normal HTML elements, such as `<input />`, we configure it via attributes. For instance, we might give it a name - we'd do this like such:
+When we use normal HTML elements, such as `<input />`, we configure it via attributes. For instance, we might give it a name:
 
 ```html
 <input name="ourInputName" />
 ```
 
-Hold on a minute.. Can we configure our directives by passing through attributes?
+Hold on a minute... can we configure our directives by passing through attributes?
 
 Yes we can!
 
